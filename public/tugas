@@ -1,0 +1,104 @@
+import React from "react"
+
+const makanans = [
+	{
+		nama: "BMW",
+		QTY: 1200,
+		harga: 24000000
+	},
+	{
+		nama: "Tesla",
+		QTY: 56,
+		harga: 21000000
+	},
+	{
+		nama: "ferrari",
+		QTY: 78,
+		harga: 60000000
+	},
+	{
+		nama: "Toyota",
+		QTY: 890,
+		harga: 15000000
+	},
+	{
+		nama: "Mercedes-Benz",
+		QTY: 1200,
+		harga: 2000000
+	},
+	{
+		nama: "Honda",
+		QTY: 1200,
+		harga: 4000000
+	},
+	{
+		nama: "Hyundai",
+		QTY: 1200,
+		harga: 5000000
+	},
+	{
+		nama: "Ford",
+		QTY: 1200,
+		harga: 3000000
+	},
+	{
+		nama: "Audi",
+		QTY: 1200,
+		harga: 2900000
+	},
+	{
+		nama: "Nissan",
+		QTY: 1200,
+		harga: 7000000
+	}
+]
+
+//Reduce
+const total_bayar = makanans.reduce((total_harga, makanan) => 
+	 total_harga+makanan.harga
+, 0)
+
+const Map = () => {
+	return (
+	<div>
+	<h2>maping</h2>
+	<ul>
+		{makanans.map((makanan, index) =>(
+			<p>{index + 1}.{makanan.nama} - Harga <sup>{makanan.harga}</sup></p>
+			))}
+	</ul>
+
+	<h2>Map filter Harga yang lebih dari 11.000</h2>
+	<ul>
+	{makanans.filter((makanan) => makanan.harga > 11000)
+	.map((makanan, index) =>(
+		<li>{index + 1}. {makanan.nama} - Harga {makanan.harga}</li>
+		))}
+	</ul>
+
+		<h3>Total Bayar : {total_bayar}</h3>
+		
+// const Map = () => {
+// 	return (
+// 	<h2>Toko Mobil AQ dan Kamu</h2>
+// 	<table>
+//   <tr>
+//     <th>No</th>
+//     <th>Nama Mobil</th>
+//     <th>QTT</th>
+//     <th>Harga</th>
+//     <th>Total Harga</th>
+//   </tr>
+//   <tr>
+//   	<td>{index + 1}</td>
+//     <td>{makanan.nama}</td>
+//     <td>{makanan.QTY}</td>
+//     <td>{makanan.harga}</td>
+//     <td>{total_bayar}</td>
+//   </tr>
+// </table>
+	</div>
+	)
+}
+
+export default Tugas

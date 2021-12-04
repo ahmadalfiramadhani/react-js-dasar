@@ -1,0 +1,35 @@
+#root {
+	background-color: darkorange;
+	color: darkgold;
+	text-align: center;
+	padding: 70%;
+	margin: 5%;
+	margin-left: 40%;
+	border-radius:3%;
+	border-color: blueviolet;
+	border: 5px;
+	margin-left: 5%;
+	padding-bottom: 50px;
+	padding-top: 5%;
+	padding-left: 15%;
+	padding-right: 14%;
+}
+/*#bud {
+	color: yellowgreen;
+}
+#Formulir {
+	color: red;
+}
+#table, #th, #td {
+  border: 1px solid black;
+}
+#mt-3 {
+	color: red;
+}
+#Table {
+	color: red;
+}
+#button {
+	color: black;
+	responsive: auto;
+}
